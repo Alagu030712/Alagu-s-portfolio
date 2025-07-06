@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alagu Sankar's Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; background-color: #1A1A40; color: white; }
+    .gradient-text {
+      background: linear-gradient(to right, #E94560, #0F3460);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    :root {
+    --bg-color:#1f242d;
+    --secondary-bg-color:#323946;
+    --main-color:#7cf03d;
+    --white-color:#fff;
+    --disabled-color:#fff3;
+}
+    .glow {
+      box-shadow: 0 0 10px #E94560, 0 0 20px #E94560, 0 0 30px #E94560;
+    }
+    .fade-in {
+      animation: fadeIn 2s ease-in forwards;
+      opacity: 0;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+    .btn-sci{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.btn{
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: var(--main-color);
+    border: .15rem solid var(--main-color);
+    border-radius: 3rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.2rem;
+    color: var(--bg-color);
+    font-weight:500;
+    transition: .5s;
+}
+.btn:hover{
+    background: transparent;
+    color: var(--main-color);
+    box-shadow: none;
+}
+.btn-sci .sci{
+    margin-left: 1.5rem;
+}
+.btn-sci .sci a{
+    display: inline-flex;
+    padding: .6rem;
+    border: .15rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: var(--main-color);
+    margin: 0 .6rem;
+    transition: .5s;
+}
+.btn-sci .sci a:hover{
+    background: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+  </style>
+</head>
+<body class="relative overflow-x-hidden">
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex items-center justify-center text-center">
+    <div class="fade-in">
+      <h1 class="text-5xl md:text-6xl font-bold gradient-text">Hi, I'm ALAGU SANKAR</h1>
+      <p class="mt-6 text-xl text-gray-300">Python Full Stack Developer | Django | React | MySQL</p>
+      <div class="btn-sci">
+                <a href="Alagu sankar Resume (2).pdf" class="btn" download>Download CV</a>
+                <div class="sci">
+                    <a href="https://www.linkedin.com/in/alagu-sankar-327860349/"><i class="bx bxl-linkedin"></i></a>
+                    <a href="https://www.instagram.com/sankar_vb_12?igsh=cnN6cWE1dXduaDFo"><i class="bx bxl-instagram"></i></a>
+                    <a href="https://wa.me/qr/WAW7CA66KJ4NK1"><i class="bx bxl-whatsapp"></i></a>
+                     <a href="https://github.com/Alagu030712"><i class="bx bxl-github"></i></a>
+                </div>
+            </div>
+      <a href="#about" class="mt-10 inline-block px-6 py-3 bg-[#E94560] text-white rounded-xl shadow-md hover:bg-[#f65f73] transition-all">About Me</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 px-6 bg-[#0F3460]">
+    <h2 class="text-4xl font-bold text-center text-white mb-10">About Me</h2>
+    <div class="max-w-4xl mx-auto text-center text-gray-300">
+      <p>I’m a passionate and detail-oriented Full Stack Developer with a strong foundation in both front-end and back-end technologies. With experience building dynamic, scalable, and user-friendly web applications, I specialize in turning complex requirements into elegant solutions. My expertise includes HTML, CSS, JavaScript, React, Node.js, Python (Django/Flask), and databases like MySQL.</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="py-20 px-6 bg-[#1A1A40]">
+    <h2 class="text-4xl font-bold text-center gradient-text mb-10">Tech Stack</h2>
+    <div class="flex flex-wrap justify-center gap-6">
+      <div class="bg-[#0F3460] p-4 rounded-xl glow">Python</div>
+      <div class="bg-[#0F3460] p-4 rounded-xl glow">Django</div>
+      <div class="bg-[#0F3460] p-4 rounded-xl glow">JavaScript</div>
+      <div class="bg-[#0F3460] p-4 rounded-xl glow">React.js</div>
+      <div class="bg-[#0F3460] p-4 rounded-xl glow">MySQL</div>
+      <div class="bg-[#0F3460] p-4 rounded-xl glow">Bootstrap</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-20 px-6 bg-[#F8F8F8] text-black">
+    <h2 class="text-4xl font-bold text-center mb-10">Projects</h2>
+    <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div class="bg-white p-4 rounded-xl shadow-lg hover:scale-105 transition-all duration-300">
+        <h3 class="text-xl font-semibold mb-2">E-Commerce Django</h3>
+        <p class="text-sm text-gray-600">A full-fledged e-commerce site using Django & Razorpay API.</p>
+              <a href="waiting.html" class="mt-6 inline-block px-6 py-3 bg-[#E94560] text-white rounded-xl shadow-md hover:bg-[#f65f73] transition-all">View Projects</a>
+      </div>
+      <div class="bg-white p-4 rounded-xl shadow-lg hover:scale-105 transition-all duration-300">
+        <h3 class="text-xl font-semibold mb-2">React Portfolio</h3>
+        <p class="text-sm text-gray-600">My own animated portfolio built with React + Tailwind + Framer Motion.</p>
+              <a href="waiting.html" class="mt-6 inline-block px-6 py-3 bg-[#E94560] text-white rounded-xl shadow-md hover:bg-[#f65f73] transition-all">View Projects</a>
+      </div>
+      <div class="bg-white p-4 rounded-xl shadow-lg hover:scale-105 transition-all duration-300">
+        <h3 class="text-xl font-semibold mb-2">Blog API</h3>
+        <p class="text-sm text-gray-600">RESTful API using Django REST Framework with JWT Authentication.</p>
+              <a href="waiting.html" class="mt-6 inline-block px-6 py-3 bg-[#E94560] text-white rounded-xl shadow-md hover:bg-[#f65f73] transition-all">View Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 px-6 bg-[#0F3460]">
+    <h2 class="text-4xl font-bold text-center text-white mb-10">Let's Connect</h2>
+   <form action="https://api.web3forms.com/submit" method="POST" class="max-w-2xl mx-auto bg-[#1A1A40] p-8 rounded-xl shadow-md">
+  <input type="hidden" name="access_key" value="2781445f-fa7a-44cf-99a6-ba5d3cb08e41">
+  
+  <input type="text" name="name" required placeholder="Name"
+         class="w-full p-3 mb-4 rounded bg-gray-800 text-white border border-gray-600" />
+  
+  <input type="email" name="email" required placeholder="Email"
+         class="w-full p-3 mb-4 rounded bg-gray-800 text-white border border-gray-600" />
+  
+  <textarea name="message" rows="4" required placeholder="Message"
+            class="w-full p-3 mb-4 rounded bg-gray-800 text-white border border-gray-600"></textarea>
+  
+  <button type="submit"
+          class="w-full py-3 bg-[#E94560] text-white font-semibold rounded hover:bg-[#f65f73] transition-all">
+    Send Message
+  </button>
+</form>
+
+  </section>
+
+  <footer class="text-center py-6 text-gray-400 bg-[#1A1A40] text-sm">
+    © 2025 Alagu Sankar | Built with using Python & React
+  </footer>
+
+</body>
+</html>

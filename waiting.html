@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  transition: opacity 0.8s ease;
+}
+
+/* Page Transitions */
+body.page-transition {
+  opacity: 0;
+}
+body.page-transition.loaded {
+  opacity: 1;
+}
+
+/* Backgrounds */
+.bg-gradient {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.bg-gradient-alt {
+  background: linear-gradient(135deg, #1d2b64, #f8cdda);
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Container Content */
+.container {
+  max-width: 600px;
+}
+
+.headline {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: slideIn 1s ease forwards;
+}
+
+.desc {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  animation: fadeIn 2s ease forwards;
+}
+
+.next-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ffffff33;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+.next-btn:hover {
+  background-color: #ffffff55;
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+</style>
+<body class="page-transition bg-gradient">
+
+  <div class="container">
+    <h1 class="headline">Oops, Sorry Project is Under Maintenance</h1>
+
+    <a href="index2.html" class="next-btn">Back to home</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+</html>
